@@ -68,22 +68,4 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-default">
-      <div class="panel-heading clearfix">
-        <strong>
-          <span class="glyphicon glyphicon-th"></span>
-          <span>Descripción</span>
-       </strong>
-      </div>
-     <div class="panel-body">
-      <ul>
-        <li><b>Usuario Nivel 1:</b> Usuario con permisos completos que gestionan los Grupos, Usuarios del Sistema e Inventario</li>
-        <li><b>Usuario Nivel 2:</b> Usuario con acceso a Ver, Agregar, Editar y Eliminar categorias, productos, imagenes y ventas.</li>
-        <li><b>Usuario Nivel 3:</b> Usuario con permisos limitados, solo puede visualizar el stock y ventas.</li>
-     </div>
-    </div>
-  </div>
-</div>
   <?php include_once('layouts/footer.php'); ?>
