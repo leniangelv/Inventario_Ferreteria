@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-06-2024 a las 05:03:02
+-- Tiempo de generación: 03-07-2024 a las 03:09:00
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -128,8 +128,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `user_level`, `image`, `status`, `last_login`) VALUES
-(1, 'Usuario Admin', 'Admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, 'hfi1dh61.jpg', 1, '2024-06-27 02:46:51'),
-(3, 'Usuario Por Defecto', 'user', '12dea96fec20593566ab75692c9949596833adc9', 3, 'no_image.jpg', 1, NULL);
+(1, 'Usuario Admin', 'Admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, 'hfi1dh61.jpg', 1, '2024-06-30 19:53:41'),
+(3, 'Usuario Por Defecto', 'user', '12dea96fec20593566ab75692c9949596833adc9', 3, '9qqw2vxs3.png', 1, '2024-06-30 18:13:12'),
+(13, 'Usuario', 'Especial', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2, 'raetvq5q13.png', 1, '2024-06-30 19:57:34');
 
 -- --------------------------------------------------------
 
@@ -150,7 +151,8 @@ CREATE TABLE `user_groups` (
 
 INSERT INTO `user_groups` (`id`, `group_name`, `group_level`, `group_status`) VALUES
 (1, 'Admin', 1, 1),
-(3, 'Usuario', 3, 1);
+(3, 'Usuario', 3, 1),
+(4, 'Especial', 2, 1);
 
 --
 -- Índices para tablas volcadas
@@ -237,13 +239,13 @@ ALTER TABLE `sales`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `user_groups`
 --
 ALTER TABLE `user_groups`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas
